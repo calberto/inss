@@ -1,0 +1,50 @@
+﻿@charset "utf-8";
+/* CSS Document - Arquivo de correção para a versão IE 6 */
+
+
+#fixoBase {
+			position:fixed;
+			_position: absolute;
+			bottom: 21px !important;
+			height:140px !important;
+			 width:100%;
+            
+            overflow-y:auto;
+            overflow-x:hidden;
+            z-index:100;
+            margin-bottom:52px !important;
+            
+		}
+        
+        div#fixoBase {
+        left: 0;
+        bottom: 21px !important;
+        _left: expression( ( 0 - fixoBase.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+        _top: expression( ( -21 - fixoBase.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+        }        
+
+
+
+/*regras do show modal*/
+		#modal { position: absolute !important; }
+        #process { position: absolute !important; top:40% !important; display:none;}
+		body { height: 100% !important; width: 100% !important; margin: 0 !important; position: relative;  }
+		html { overflow-y: hidden !important;  }
+		#novobody { position: relative !important; overflow-y: scroll !important; height: 96% !important; width: 100% !important; margin: 0 !important; }
+		
+		
+/*div fixo - navegação*/		
+    	#Menu-Interno { position: absolute; left: 0px; top: 0px; z-index:900; }
+		#DivNavegacao { position: absolute; right: 0px; bottom: 0px; z-index:901;}
+		
+        div#Menu-Interno {
+		left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+		top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+		}
+		div#DivNavegacao {
+		right: auto; bottom: auto;
+		left: expression( ( 0 - DivNavegacao.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+		top: expression( ( 0 - DivNavegacao.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+		}
+		
+/*regra do iframe para ocultar os select do ie6*/

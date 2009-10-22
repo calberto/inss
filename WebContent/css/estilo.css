@@ -1,0 +1,75 @@
+body, input, select, td, textarea{ 
+    font-family:Verdana; 
+    font-size: 10px;
+}
+h1, h2, h3, h4, h5, h6, p, strong, div, form, acronym, label, table, td, th, span, a, hr, code, pre, hr {
+    font-size: 1em;
+    background-repeat:no-repeat;
+    list-style-type:none;
+}
+.table {
+    border: 1px solid #666;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+th, td {
+    padding: 5px 4px 2px 4px;
+    vertical-align: center;
+}
+th.sorted {
+    background-color: #69c;
+}
+th a, th a:visited {
+  color: black;
+}
+a:visited {
+ color: blue;
+}
+th a:hover {
+  text-decoration: underline;
+  color: black;
+}
+th.sorted a, th.sortable a {
+    background-position: right;
+    display: block;
+}
+th.sortable a {
+    background-image: url(../images/arrow_off.png);
+}
+th.order1 a {
+    background-image: url(../images/arrow_down.png);
+}
+th.order2 a {
+    background-image: url(../images/arrow_up.png);
+}
+div.exportlinks {
+    padding: 2px 4px 2px 4px;
+    margin: -10px 0 10px 0;
+    width: 79%;
+}
+
+/* EXPORTÇÃO */
+span.export {
+    padding: 0 4px 1px 20px;
+    display:inline; display:inline-block;
+    cursor: pointer;
+}
+span.excel {
+    background-image: url(../images/ico_file_excel.png);
+}
+span.csv {
+    background-image: url(../images/ico_file_csv.png);
+}
+span.xml {
+    background-image: url(../images/ico_file_xml.png);
+}
+span.pdf {
+    background-image: url(../images/ico_file_pdf.png);
+}
+/* COR SIM, COR NÃO */
+table thead tr {
+  background-color: #69c;
+}
+table tr.even {
+  background-color: #def;
+}

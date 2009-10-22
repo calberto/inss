@@ -1,0 +1,53 @@
+/*LOGIN*/
+#formlogin {
+	margin-top:15%;
+	margin-left:auto;
+	margin-right:auto;
+	width:450px;
+	height:auto;
+	border:2px solid #000066;
+}
+#formlogin .conteudo {
+	border:1px solid #F7AE4D;
+	background-color:#E1EDF7;
+	margin-bottom:18px;
+	padding:4px 0 4px 4px;
+	position:static;
+	width:436px;
+	height:auto;
+	float: left;
+}
+
+
+
+#cabecalho-login { 
+	top: 0px;
+	width: 100%;
+	height: 80px;
+	background: #ffffff;
+	border:1px solid 000066;
+}
+#desenv-cab-login {
+	margin-left: 330px;
+	margin-top: -25px;
+	width: 100px;
+	height: auto;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000066;
+	text-align: right;
+	line-height: 18px;
+}
+#formlogin .imagetopform{
+	font-family:Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#3A6FA2;
+	font-weight:bold;
+	border-bottom:2px solid #F7AE4D;
+	margin-bottom:15px;
+	width:auto;
+	text-indent:10px;
+}
+
+
+/*FIM DO LOGIN*/

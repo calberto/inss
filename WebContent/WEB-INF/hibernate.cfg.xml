@@ -1,0 +1,13 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		 <mapping class="br.com.cadasilva.inss.model.Empresa"/>  
+		<mapping class="br.com.cadasilva.inss.model.Funcionario"/>
+		<mapping class="br.com.cadasilva.inss.model.Estado"/>
+		<mapping class="br.com.cadasilva.inss.model.Cidades"/>
+		<mapping class="br.com.cadasilva.inss.model.AgenciaEmpregos"/>
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Top 5 Cd Recommendations</title>
+		<link rel="stylesheet" type="text/css" href="top5.css" />
+		<link href="css/estilo.css" rel="stylesheet" type="text/css">
+		<script type='text/javascript' src='js/addToTop5.js'></script>
+		<script type="text/javascript">
+		function aboveFrames() {
+			document.getElementById("top5-listings").frame="above";
+		}
+		
+		</script>
+		
+	</head>
+	<body onload="addOnClickHandlers();">
+		<div id="instructions">
+			Click on a CD cover to add it to the Top 5 list. If you want to start over, click the "Start Over" button to clear
+			the top 5 list.
+		</div>
+		
+		<div id="cds">
+			<img class="cover" src="images/vaughan_flood.jpg" alt="Texas Flood, by Stevie Ray Vaughan" width="100" />
+			<img class="cover" src="images/clapton_cream.jpg" alt="The Cream of Clapton, by Eric Clapton" width="100"/>
+			<img class="cover" src="images/hendrix_experience.jpg" alt="Are You Experienced, by Jimmi Hendrix" width="100"/>
+			<img class="cover" src="images/house_delta.jpg" alt="Original Delta Blues, by Son House" width="100"/>
+			<img class="cover" src="images/johnson_complete.jpg" alt="The Complete Recordings, by Robert Johnson" width="100"/>
+			<img class="cover" src="images/johnson_wizard.jpg" alt="The Original Guitar  Wizard, by Lonnie Johnson" width="100"/>
+			<img class="cover" src="images/jorma_blues.jpg" alt="Blue Country Heart, by Jorma Kaukonen" width="100"/>
+			<img class="cover" src="images/lang_lie.jpg" alt="Lie to Me, by Jonny Lang" width="100"/>
+			<img class="cover" src="images/mayer_try.jpg" alt="Try! Live, by John Mayer Trio" width="100"/>
+			<img class="cover" src="images/shepherd_ledbetter.jpg" width="100"/>
+			<!-- <img class="cover" src="images/vaughan_flood.jpg" width="100"/> -->
+			<img class="cover" src="images/waters_live.jpg" alt="Live, by Muddy Waters" width="100"/>
+			<!-- Lots more images in here... -->
+		</div>
+		
+		<div id="top5-listings">
+			<h2>My Top 5 CDs</h2>
+			<div id="top5"></div>
+		</div>
+		<form>
+			<input type="button" value="Start Over" onclick="aboveFrames();" />
+			
+		</form>		
+	</body>
+</html>

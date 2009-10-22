@@ -1,0 +1,123 @@
+<!DOCTYPE struts PUBLIC
+
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="empresa" extends="struts-default">
+
+
+
+    	<default-interceptor-ref name="basicStack" />
+
+
+
+    	<action name="findAllEmpresa"
+
+    		class="br.com.cadasilva.inss.action.ActionEmpresa" method="findAll">
+
+    		<result name="success">consultar-empresas.jsp</result>
+
+    	</action>
+
+		<action name="day"
+
+    		class="br.com.cadasilva.inss.action.ActionEmpresa" method="getMyList">
+
+    		<result name="success">consultarEmpresas.jsp</result>
+
+    	</action>
+
+    	<action name="saveEmpresa"
+
+    		class="br.com.cadasilva.inss.action.ActionEmpresa" method="save">
+
+    		<result name="input">inserir-empresas.jsp</result>
+
+    		<result name="success" type="chain">findAllEmpresa</result>
+
+    		<!--<interceptor-ref name="validationWorkflowStack" /> -->
+
+    	</action>
+
+    	<action name="generateTXTFile"
+
+    		class="br.com.cadasilva.inss.action.GerarEmpresaAction" method="generateTXTFileEmpresa">
+
+    		<result name="input">consultar-empresas.jsp</result>
+
+    		<result name="success" type="chain">findAllEmpresa</result>
+
+    	</action>
+    	
+       <action name="prepareUpdateEmpresa"
+
+    		class="br.com.cadasilva.inss.action.ActionEmpresa" method="findById">
+
+    		<result name="input">consultar-empresas.jsp</result>
+
+    		<result name="success">atualizar-empresas.jsp</result>
+
+    	</action>
+
+    	<action name="updateEmpresa"
+
+    		class="br.com.cadasilva.inss.action.ActionEmpresa" method="update">
+
+    		<result name="input">consultar-empresas.jsp</result> 
+
+    		<result name="success">consultar-empresas.jsp</result>
+
+    	</action>
+    	
+    	<action name="update"
+
+    		class="br.com.cadasilva.inss.action.ActionEmpresa" method="update">
+
+    		<!-- <result name="input">atualizacao.jsp</result>-->
+
+    		<result name="success">atualizar-empresas.jsp</result>
+
+    	</action>
+    	
+
+    	<action name="deleteEmpresa"
+
+    		class="br.com.cadasilva.inss.action.ActionEmpresa" method="delete">
+
+    		<result name="input">consultar-empresas.jsp</result>
+
+    		<result name="success" type="chain">findAllEmpresa</result>
+
+    	</action>
+
+    	<action name="findByEmpresa"
+
+    		class="br.com.cadasilva.inss.action.ActionEmpresa" method="findById">
+
+    		<result name="success">consultar-empresas.jsp</result>
+
+    		<interceptor-ref name="chain" />
+
+    	</action>
+
+       
+
+		<action name="checkConsulta"
+
+    		class="br.com.cadasilva.inss.action.CheckBoxList" method="execute">
+
+    		<result name="success">consultasDiversas.jsp</result>
+
+    		<interceptor-ref name="chain" />
+
+    	</action>
+
+
+    </package>
+
+
+
+</struts>

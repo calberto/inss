@@ -1,0 +1,96 @@
+.shadetabs{
+	font-family: Tahoma, Tahoma, Arial, Helvetica, sans-serif;
+	list-style-type: none; 
+	text-align: left;
+	margin-top:8px;
+	margin-bottom:-2px;/*aqui*/
+}
+.shadetabs li{
+	display: inline;
+	margin:0;
+}
+.shadetabs li a:hover{
+	text-decoration: underline;
+	color: #FF6600;
+}
+.shadetabs li.selected{
+	position: ;/*relative*/
+	top: 1px;
+}
+.shadetabs li a{
+	background:#e1edf7;
+	border:1px solid #f7ae4d;
+	border-bottom:1px solid #f7ae4d;
+	text-decoration: none;
+	color:#000066;
+	font-family: Tahoma, Tahoma, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	position: ;/*relative*/
+	top: 1px;
+	vertical-align:super;
+	padding:3px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.shadetabs li.selected a{ 
+	background:#000066;
+	border-left:1px solid #000066;
+	border-right:1px solid #000066;
+	border-top:1px solid #000066;
+	border-bottom:1px solid #000066;
+	text-decoration: none;
+	color:#ffffff;
+	font-family: Tahoma, Tahoma, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	vertical-align:super;
+	padding:3px;
+	padding-left:10px;
+	padding-right:10px;
+	bottom:0;
+}
+
+.shadetabs li.selected a:hover{ 
+	text-decoration: none;
+}
+
+.shadetabs li.nexttab{
+	position: ;/*relative*/
+	top: 1px;
+}
+
+.shadetabs li.nexttab a{ 
+	background:#ff9000;
+	border:1px solid #f7ae4d;
+	border-bottom:1px solid #f7ae4d;
+	text-decoration: none;
+	color:#000066;
+	font-family: Tahoma, Tahoma, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	position: ;/*relative*/
+	top: 1px;
+	vertical-align:super;
+	padding:3px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.shadetabs li.nexttab a:hover{ 
+	text-decoration: none;
+}
+
+.tabcontentstyle{ 
+	width: auto;
+}
+
+.tabcontent{
+	display:none;
+}
+
+@media print {
+	.tabcontent {
+	display:block!important;
+	}
+}

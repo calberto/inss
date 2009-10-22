@@ -1,0 +1,46 @@
+body {
+  font-family:   "Comic Sans MS", Verdana, sans-serif;
+  text-align:    center;
+}
+
+#instructions {
+  margin:        20px 200px;
+}
+
+#cds {
+  width:         400px;
+  margin:        20px auto 20px auto;
+}
+
+form {
+  position:      relative;
+  margin:        50px auto auto auto;
+}
+
+img.cover {
+  height:        70px;
+  padding:       10px; 
+}
+
+#top5-listings {
+  margin:        50px auto;
+}
+
+#top5 {
+  position:      relative;
+  border-top:    thin solid black; 
+  margin:        10px auto 10px auto;
+  width:         650px;
+  padding:       10px;
+  text-align:    left;
+}
+
+#top5 img {
+  position:   relative;
+  height:        100px;
+  padding:         0px;
+  margin:         10px;
+  top:            10px;
+  left:            5px;
+  z-index:           1;
+}

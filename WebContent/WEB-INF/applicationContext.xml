@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd"> 
+
+<beans>
+	<!-- DataSource -->
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		
+		<property name="driverClassName" value="org.postgresql.Driver"/>
+
+		<property name="url" value="jdbc:postgresql://localhost:5432/postgres"/>
+
+		<property name="username" value="postgres"/>
+
+		<property name="password" value="calberto"/>
+	</bean>	
+
+	<!-- SessionFactory -->
+     <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+	    <property name="configurationClass" value="org.hibernate.cfg.AnnotationConfiguration"/>
+	    <property name="configLocation" value="/WEB-INF/hibernate.cfg.xml"/>
+        <property name="dataSource" ref="dataSource"/>
+        <property name="hibernateProperties">
+           	<props>
+           	<!-- 
+	   			<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+	   		 -->	
+
+	   			<prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="c3p0.min_size">20</prop>
+				<prop key="c3p0.max_size">75</prop>
+				<prop key="c3p0.timeout">180</prop>
+				<prop key="c3p0.c3p0.idle_test_period">100</prop>
+				<prop key="hibernate.format_sql">true</prop>
+			<!-- <prop key="hibernate.hbm2ddl.auto">create</prop> -->	    
+  			</props>
+        </property>
+    </bean>
+
+	<!-- Transaction -->
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+
+	 <!-- DAOs  -->
+	 <bean name="empresaDAO" class="br.com.cadasilva.inss.dao.EmpresaDAO">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean> 
+	<bean name="funcionarioDAO" class="br.com.cadasilva.inss.dao.FuncionarioDAO">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	<bean name="cidadesDAO" class="br.com.cadasilva.inss.dao.CidadesDAO">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	<bean name="estadoDAO" class="br.com.cadasilva.inss.dao.EstadoDAO">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+	<bean name="agenciaEmpregosDAO" class="br.com.cadasilva.inss.dao.AgenciaEmpregosDAO">
+		<property name="sessionFactory" ref="sessionFactory"/>
+	</bean>
+	
+</beans>

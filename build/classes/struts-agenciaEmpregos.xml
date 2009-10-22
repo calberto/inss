@@ -1,0 +1,132 @@
+<!DOCTYPE struts PUBLIC
+
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="agenciaEmpregos" extends="struts-default">
+
+
+
+    	<default-interceptor-ref name="basicStack" />
+    	
+    	
+    	
+    	
+		<action name="buscaEstadoAgencia"
+			
+			class="br.com.cadasilva.inss.action.ActionAgenciaEmpregos" method="getListaCidades">
+			
+			<result name="success">inserir-agenciaEmpregos.jsp</result>
+			
+		</action>	
+
+    	<action name="findAllAgenciaEmpregos"
+
+    		class="br.com.cadasilva.inss.action.ActionAgenciaEmpregos" method="findAll">
+
+    		<result name="success">consultarAgenciaEmpregos.jsp</result>
+
+    	</action>
+
+		
+		<action name="listarAgenciaEmpregos"
+
+    		class="br.com.cadasilva.inss.action.ActionAgenciaEmpregos" method="getLista">
+
+    		<result name="success">consultarAgenciaEmpregos.jsp</result>
+
+    	</action>
+
+
+		<action name="findAllListaAgenciaEmpregos"
+
+    		class="br.com.cadasilva.inss.action.ActionAgenciaEmpregos" method="listaTudo">
+
+    		<result name="success">consultarAgenciaEmpregos.jsp</result>
+
+    	</action>
+		
+		
+    	<action name="saveAgenciaEmpregos"
+
+    		class="br.com.cadasilva.inss.action.ActionAgenciaEmpregos" method="save">
+
+    		<result name="input">inserir-agenciaEmpregos.jsp</result>
+
+    		<result name="success" type="chain">findAllAgenciaEmpregos</result>
+
+    		<!--<interceptor-ref name="validationWorkflowStack" /> -->
+
+    	</action>
+
+    	<action name="generateTXTFile"
+
+    		class="br.com.cadasilva.inss.action.GerarAgenciaEmpregosAction" method="generateTXTFileAgenciaEmpregos">
+
+    		<result name="input">consultar-agenciaEmpregos.jsp</result>
+
+    		<result name="success" type="chain">findAllAgenciaEmpregos</result>
+
+    	</action>
+    	
+       <action name="prepareUpdateAgenciaEmpregos"
+
+    		class="br.com.cadasilva.inss.action.ActionAgenciaEmpregos" method="findById">
+
+    		<result name="input">consultar-agenciaEmpregos.jsp</result>
+
+    		<result name="success">atualizar-agenciaEmpregos.jsp</result>
+
+    	</action>
+
+    	<action name="updateAgenciaEmpregos"
+
+    		class="br.com.cadasilva.inss.action.ActionAgenciaEmpregos" method="update">
+
+    		<result name="input">update-agenciaEmpregos.jsp</result>
+
+    		<result name="success">atualizar-agenciaEmpregos.jsp</result>
+
+    	</action>
+
+    	<action name="deleteAgenciaEmpregos"
+
+    		class="br.com.cadasilva.inss.action.ActionAgenciaEmpregos" method="delete">
+
+    		<result name="input">consultar-agenciaEmpregos.jsp</result>
+
+    		<result name="success" type="chain">findAllAgenciaEmpregos</result>
+
+    	</action>
+
+    	<action name="findByAgenciaEmpregos"
+
+    		class="br.com.cadasilva.inss.action.ActionAgenciaEmpregos" method="findById">
+
+    		<result name="success">consultar-agenciaEmpregos.jsp</result>
+
+    		<interceptor-ref name="chain" />
+
+    	</action>
+
+       <action name="dayAgenciaEmpregos"
+
+    		class="br.com.cadasilva.inss.action.ActionAgenciaEmpregos" method="day">
+
+    		<result name="success">teste.jsp</result>
+
+    		<interceptor-ref name="chain" />
+
+    	</action>
+
+
+
+
+    </package>
+
+
+
+</struts>

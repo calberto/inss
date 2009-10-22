@@ -1,0 +1,153 @@
+<!DOCTYPE struts PUBLIC
+
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="estado" extends="struts-default">
+
+
+
+    	<default-interceptor-ref name="basicStack" />
+
+
+		<action name="buscaCidades"
+			
+			class="br.com.cadasilva.inss.action.ActionCidades" method="getListaEstado">
+			
+			<result name="success">consultarEstados.jsp</result>
+			
+		</action>	
+
+    	<action name="popularCidades"
+
+    		class="br.com.cadasilva.inss.action.ActionEstado" method="popularCidades">
+
+    		<result name="success">consultarEstados.jsp</result>
+
+    	</action>
+
+		<action name="popularEstados"
+
+    		class="br.com.cadasilva.inss.action.ActionEstado" method="getListaCidades">
+
+    		<result name="success">consultarEstados.jsp</result>
+
+    	</action>
+    	
+    	<action name="popularEstadosAgencia"
+
+    		class="br.com.cadasilva.inss.action.ActionEstado" method="getListaCidades">
+
+    		<result name="success">inserir-agenciaEmpregos.jsp</result>
+
+    	</action>
+		
+		
+    	<action name="findAllEstado"
+
+    		class="br.com.cadasilva.inss.action.ActionEstado" method="findAll">
+
+    		<result name="success">consultar-estados.jsp</result>
+
+    	</action>
+
+		<action name="findAllListaTodasCidades"
+
+    		class="br.com.cadasilva.inss.action.ActionEstado" method="getListaCidades">
+
+    		<result name="success">consultarEstados.jsp</result>
+
+    	</action>
+
+		<action name="findAllListaTodosEstados"
+
+    		class="br.com.cadasilva.inss.action.ActionEstado" method="getListaEstado">
+
+    		<result name="success">consultarEstados.jsp</result>
+
+    	</action>
+
+    	<action name="saveEstado"
+
+    		class="br.com.cadasilva.inss.action.ActionEstado" method="save">
+
+    		<result name="input">inserir-estados.jsp</result>
+
+    		<result name="success" type="chain">findAllEstado</result>
+
+    		<!--<interceptor-ref name="validationWorkflowStack" /> -->
+
+    	</action>
+
+    	<action name="generateTXTFile"
+
+    		class="br.com.cadasilva.inss.action.GerarEstadoAction" method="generateTXTFileEstado">
+
+    		<result name="input">consultar-estados.jsp</result>
+
+    		<result name="success" type="chain">findAllEstados</result>
+
+    	</action>
+    	
+       <action name="prepareUpdateEstado"
+
+    		class="br.com.cadasilva.inss.action.ActionEstado" method="findById">
+
+    		<result name="input">consultar-estados.jsp</result>
+
+    		<result name="success">atualizar-estado.jsp</result>
+
+    	</action>
+
+    	<action name="updateEstado"
+
+    		class="br.com.cadasilva.inss.action.ActionEstado" method="update">
+
+    		<result name="input" type="chain">cidades</result>
+			<result name="success" type="chain">cidades</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+    	</action>
+
+    	<action name="deleteEstado"
+
+    		class="br.com.cadasilva.inss.action.ActionEstado" method="delete">
+
+    		<result name="input">consultar-estados.jsp</result>
+
+    		<result name="success" type="chain">findAllEstado</result>
+
+    	</action>
+
+    	<action name="findByEstado"
+
+    		class="br.com.cadasilva.inss.action.ActionEstado" method="findById">
+
+    		<result name="success">consultar-estados.jsp</result>
+
+    		<interceptor-ref name="chain" />
+
+    	</action>
+
+       <action name="dayEstado"
+
+    		class="br.com.cadasilva.inss.action.ActionEstado" method="day">
+
+    		<result name="success">teste.jsp</result>
+
+    		<interceptor-ref name="chain" />
+
+    	</action>
+
+		
+		
+		
+
+
+    </package>
+
+
+
+</struts>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 1.0//EN"
+    "http://www.getahead.ltd.uk/dwr/dwr10.dtd">
+<dwr>
+	<allow>
+		<create creator="new" javascript="FacadeConsultaAdministracaoAjax">
+			<param name="class" value="br.com.cadasilva.inss.action.FacadeConsultaAdministracaoAjax" />
+		</create>
+		<convert converter="bean" match="br.com.cadasilva.inss.model.*"/>
+
+	</allow>
+	
+	<signatures>
+	  <![CDATA[
+	  import java.util.List;
+	  
+	  ]]>
+	</signatures>
+	
+	
+
+</dwr>

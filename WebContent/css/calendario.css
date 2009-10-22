@@ -1,0 +1,65 @@
+.ajax__calendar_container {
+	padding:4px;
+	position:absolute;
+	cursor:default;
+	width:199px;
+	font-size:11px;
+	text-align:center;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+
+}
+.ajax__calendar_body {
+	height:139px;
+	width:199px;
+	position:relative;
+	overflow:hidden;
+	margin:auto;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.ajax__calendar_days, .ajax__calendar_months, .ajax__calendar_years {
+	top:0px;
+	left:0px;
+	height:139px;
+	width:199px;
+	position:absolute;
+	text-align:center;
+	margin:auto;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.ajax__calendar_container TABLE {font-size:11px;}
+.ajax__calendar_header {height:20px;width:100%;}
+.ajax__calendar_prev {cursor:pointer;width:15px;height:15px;float:left;background-repeat:no-repeat;background-position:50% 50%;background-image:url(../images/sulamerica/seta01.gif);}
+.ajax__calendar_next {cursor:pointer;width:15px;height:15px;float:right;background-repeat:no-repeat;background-position:50% 50%;background-image:url(../images/sulamerica/seta02.gif);}
+.ajax__calendar_title {cursor:pointer;font-weight:bold;}
+.ajax__calendar_footer {height:15px;}
+.ajax__calendar_today {cursor:pointer;padding-top:3px;}
+.ajax__calendar_dayname {
+	height:17px;
+	width:19px; /*17*/
+	text-align:right;
+	padding:0 2px;
+}
+.ajax__calendar_day {height:17px;width:18px;text-align:right;padding:0 2px;cursor:pointer;}
+.ajax__calendar_month {height:44px;width:40px;text-align:center;cursor:pointer;overflow:hidden;}
+.ajax__calendar_year {height:44px;width:40px;text-align:center;cursor:pointer;overflow:hidden;}
+
+.ajax__calendar .ajax__calendar_container {border:1px solid #646464;background-color:#fffacd;color:#000000; z-index:1001} /*cor do background*/
+.ajax__calendar .ajax__calendar_footer {border-top:1px solid #fffacd;}
+.ajax__calendar .ajax__calendar_dayname {border-bottom:1px solid #fffacd;}
+.ajax__calendar .ajax__calendar_day {border:1px solid #fffacd;}
+.ajax__calendar .ajax__calendar_month {border:1px solid #fffacd;}
+.ajax__calendar .ajax__calendar_year {border:1px solid #fffacd;}
+
+.ajax__calendar .ajax__calendar_active .ajax__calendar_day {background-color:#fffacd;border-color:#ff8400;color:#ff8400;}/*dada selecinada*/
+.ajax__calendar .ajax__calendar_active .ajax__calendar_month {background-color:#fffacd;border-color:#ff8400;color:#ff8400;}
+.ajax__calendar .ajax__calendar_active .ajax__calendar_year {background-color:#fffacd;border-color:#ff8400;color:#ff8400;}
+
+.ajax__calendar .ajax__calendar_other .ajax__calendar_day {background-color:#fffacd;border-color:#fffacd;color:#646464;} /*data anterior*/
+.ajax__calendar .ajax__calendar_other .ajax__calendar_year {background-color:#fffacd;border-color:#fffacd;color:#646464;}
+
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_day {background-color:#ff8400;border-color:#daf2fc;color:#ffffff;}
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_month {background-color:#ff8400;border-color:#daf2fc;color:#ffffff;}
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_year {background-color:#ff8400;border-color:#daf2fc;color:#ffffff;}
+
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_title {color:#ff8400;}
+.ajax__calendar .ajax__calendar_hover .ajax__calendar_today {color:#ff8400;}

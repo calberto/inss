@@ -1,0 +1,140 @@
+<!DOCTYPE struts PUBLIC
+
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="cidades" extends="struts-default">
+
+
+
+    	<default-interceptor-ref name="basicStack" />
+
+		
+
+    	<action name="findAllCidades"
+
+    		class="br.com.cadasilva.inss.action.ActionCidades" method="findAll">
+
+    		<result name="success">consultar-cidades.jsp</result>
+
+    	</action>
+
+		<action name="buscaCidades"
+			
+			class="br.com.cadasilva.inss.action.ActionCidades" method="getListaEstado">
+			
+			<result name="success">consultarEstados.jsp</result>
+			
+		</action>	
+		
+		<action name="listarCidades"
+
+    		class="br.com.cadasilva.inss.action.ActionCidades" method="getLista">
+
+    		<result name="success">consultarCidades.jsp</result>
+
+    	</action>
+
+
+		<action name="findAllListaCidades"
+
+    		class="br.com.cadasilva.inss.action.ActionCidades" method="listaTudo">
+
+    		<result name="success">consultar-cidades.jsp</result>
+
+    	</action>
+		
+		
+    	<action name="saveCidade"
+
+    		class="br.com.cadasilva.inss.action.ActionCidades" method="save">
+
+    		<result name="input">inserir-cidades.jsp</result>
+
+    		<result name="success" type="chain">findAllCidades</result>
+
+    		<!--<interceptor-ref name="validationWorkflowStack" /> -->
+
+    	</action>
+
+    	<action name="generateTXTFile"
+
+    		class="br.com.cadasilva.inss.action.GerarCidadesAction" method="generateTXTFileCidades">
+
+    		<result name="input">consultar-cidades.jsp</result>
+
+    		<result name="success" type="chain">findAllCidade</result>
+
+    	</action>
+    	
+       <action name="prepareUpdateCidade"
+
+    		class="br.com.cadasilva.inss.action.ActionCidades" method="findById">
+
+    		<result name="input">consultar-cidades.jsp</result>
+
+    		<result name="success">atualizar-cidades.jsp</result>
+
+    	</action>
+
+    	<action name="updateCidade"
+
+    		class="br.com.cadasilva.inss.action.ActionCidades" method="update">
+
+    		<result name="input" type="chain">uf</result>
+			<result name="success" type="chain">uf</result>
+			<interceptor-ref name="validationWorkflowStack"/>
+
+    	</action>
+
+    	<action name="deleteCidade"
+
+    		class="br.com.cadasilva.inss.action.ActionCidades" method="delete">
+
+    		<result name="input">consultar-cidades.jsp</result>
+
+    		<result name="success" type="chain">findAllCidades</result>
+
+    	</action>
+
+    	<action name="findByCidade"
+
+    		class="br.com.cadasilva.inss.action.ActionCidades" method="findById">
+
+    		<result name="success">consultar-cidades.jsp</result>
+
+    		<interceptor-ref name="chain" />
+
+    	</action>
+
+       <action name="dayCidade"
+
+    		class="br.com.cadasilva.inss.action.ActionCidades" method="day">
+
+    		<result name="success">teste.jsp</result>
+
+    		<interceptor-ref name="chain" />
+
+    	</action>
+    	
+    	<action name="NgcInss"
+
+    		class="br.com.cadasilva.inss.action.NgcInss" method="carregaComboCidades">
+
+    		<result name="success">consultarEstados.jsp</result>
+
+    		<interceptor-ref name="chain" />
+
+    	</action>
+
+
+
+
+    </package>
+
+
+
+</struts>

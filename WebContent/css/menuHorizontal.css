@@ -1,0 +1,57 @@
+ul#primary-nav,
+ul#primary-nav ul {
+	margin:0;
+	padding:0;
+	margin-left:16px;
+    }
+ul#primary-nav li {
+    position: relative;
+    list-style: none;
+    display: inline;
+    float:left;
+}
+ul#primary-nav li a { /*Menu*/
+    display: block;
+    text-decoration: none;
+    float:left;
+    color: #fff;
+    padding: 5px;
+	padding-left:8px;
+	padding-right:20px;
+	border-left:1px solid #fff;
+	border-right:1px solid #fff;
+	font-size: 11px;
+	font-family: MS Sans Serif,arial;	
+	font-weight:bold;
+	background-color:#000066;
+	background-image:url(../images/sulamerica/seta_menu.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+ul#primary-nav li a:hover { 
+	color: #000;/*ffcc00*/
+	background:#6a97c6;
+	background-image:url(../images/sulamerica/seta_menu-hover2.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;	
+  }
+#menu-C ul#primary-nav li a {
+	background:#FF0000;
+	border:1px solid #000000;
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html ul#primary-nav li { float: left; height: 1%; }
+* html ul#primary-nav li a { height: 1%; }
+/* End */
+
+ul#primary-nav li.menuparent { 
+	background: transparent url(../images/sulamerica/arrow-down.gif) right center no-repeat;
+	clear:left;
+
+} 
+
+ul#primary-nav li.menuparent:hover,
+ul#primary-nav li.over { 
+	background-color: #f9f9f9; 
+}

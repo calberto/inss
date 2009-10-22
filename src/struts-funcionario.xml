@@ -1,0 +1,104 @@
+<!DOCTYPE struts PUBLIC
+
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+
+
+<struts>
+
+    <package name="funcionario" extends="struts-default">
+
+
+
+    	<default-interceptor-ref name="basicStack" />
+
+
+
+    	<action name="findAllFuncionario"
+
+    		class="br.com.cadasilva.inss.action.ActionFuncionario" method="findAll">
+
+    		<result name="success">consultar-funcionario.jsp</result>
+
+    	</action>
+
+    	<action name="saveFuncionario"
+
+    		class="br.com.cadasilva.inss.action.ActionFuncionario" method="save">
+
+    		<result name="input">inserir-funcionario.jsp</result>
+
+    		<result name="success" type="chain">findAllFuncionario</result>
+
+    		<!--<interceptor-ref name="validationWorkflowStack" /> -->
+
+    	</action>
+
+    	<action name="generateTXTFile"
+
+    		class="br.com.cadasilva.inss.action.GerarFuncionarioAction" method="generateTXTFileFuncionario">
+
+    		<result name="input">consultar-funcionario.jsp</result>
+
+    		<result name="success" type="chain">findAllFuncionario</result>
+
+    	</action>
+
+       <action name="prepareUpdateFuncionario"
+
+    		class="br.com.cadasilva.inss.action.ActionFuncionario" method="findById">
+
+    		<result name="input">consultar-funcionario.jsp</result>
+
+    		<result name="success">atualizar-funcionario.jsp</result>
+
+    	</action>
+
+    	<action name="updateFuncionario"
+
+    		class="br.com.cadasilva.inss.action.ActionFuncionario" method="update">
+
+    		<result name="input">update-funcionario.jsp</result>
+
+    		<result name="success">atualizar-funcionario.jsp</result>
+
+    	</action>
+    	
+    	<action name="deleteFuncionario"
+    		class="br.com.cadasilva.inss.action.ActionFuncionario" method="delete">
+    		
+    		<result name="input">consultar-funcionario.jsp</result>
+
+    		<result name="success" type="chain">findAllFuncionario</result>
+    		
+    	</action>	
+
+
+    	<action name="findByFuncionario"
+
+    		class="br.com.cadasilva.inss.action.ActionFuncionario" method="findById">
+
+    		<result name="success">consultar-funcionario.jsp</result>
+
+    		<interceptor-ref name="chain" />
+
+    	</action>
+
+       
+		<action name="radioTag" 
+		
+		class="br.com.cadasilva.inss.action.ActionFuncionario" method="execute">
+		
+			<result name="success">consultasDiversas.jsp</result>
+		
+		</action>
+
+
+
+    </package>
+
+
+
+</struts>

@@ -1,0 +1,1236 @@
+/**************************************************************************/
+/********* Arquivo CSS unificado para aplicação Camed ***********************/
+/**************************************************************************/
+body {
+	background: #F5F5F5;
+	margin: 0px;
+}
+
+input {
+	font: normal 11px Geneva, Arial, Helvetica, sans-serif;
+	margin-right: 10px;
+	border: 1px solid #7f9db9;
+}
+
+select,textarea {
+	font: normal 11px Geneva, Arial, Helvetica, sans-serif;
+	margin-right: 10px;
+	border: 1px solid #7f9db9;
+}
+
+label {
+	color: #000000;
+	font-size: 10px;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-right: 10px;
+	vertical-align: bottom;
+}
+
+fieldset { 
+	/*padding-top: 1px;*/
+	border: 1px solid #acb0b5;
+	width: auto;
+	padding: 0px;
+	margin: 2px;
+	/*margin-top: 2px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;*/
+	background: url(../images/camed/legend_fundo2.gif) repeat;
+	/*background-color: #F1E6DA;*/
+}
+
+legend {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	background: #eccead;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 6px;
+	padding-bottom: 0px;
+	padding-left: 6px;
+	width: auto;
+	height: auto;
+	border: 1px solid #dbcac1;
+}
+
+a{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #333333;
+	text-decoration: underline;
+}
+
+th {
+	font: normal;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: middle;
+	text-align: center;
+	border-left: #778 1px solid;;
+}
+
+h5 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-indent: 12px;
+	vertical-align: middle;
+	vertical-align: bottom;
+	background-position: bottom;
+}
+
+h6 { 
+	/*background:#187C98;*/
+	background: url(../images/camed/bg_usuario.gif) repeat-x;
+	border-bottom: solid 1px #FF6600;
+	color: #ffffff;
+	font-size: 1em;
+	padding: 3px 5px;
+	margin: 0;
+}
+
+hr{
+	border-top: 1px solid #acb0b5;
+	background-color: #eaeff3;
+	margin: 5px 1px;
+	padding: 0 15px;
+	font: 1px/ 1px monospace;
+	height: 1px
+}
+
+#layout {
+	width: 611px; /*Tamanho da tabela principal - tamanho original 590 */
+	padding-right: 1px;
+	padding-left: 1px;
+	margin: 0 auto;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+	text-indent: 3px;
+	border-top: solid 1px #a7b8c1;
+	border-left: solid 1px #a7b8c1;
+	border-right: solid 1px #a7b8c1;
+	border-bottom: solid 1px #a7b8c1;
+}
+
+#layouttabela {
+	width: 100%;
+	padding-right: 1px;
+	padding-left: 1px;
+	margin: 0 auto;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	text-indent: 3px;
+	background: url(../images/camed/bgtabela.gif) repeat;
+}
+
+.fundorotulo2 {
+	background: #f5f5f5 url(../images/camed/toplayout.gif) no-repeat center bottom;
+	height: 29px;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: middle;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	text-indent: 12px;
+}
+
+.layoutaba {
+	width: 99%;
+	padding-right: 1px;
+	padding-left: 1px;
+	margin: 0 auto;
+	margin-top: 0px;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	text-indent: 3px;
+	background: #f1e6da;
+	border-left: 1px solid #acb0b5;
+	border-right: 1px solid #acb0b5;
+}
+
+.baseBottomaba {
+	height: 10px;
+	background: url(../images/camed/basebottomaba.gif) repeat-x center bottom;
+}
+
+.baseBottom {
+	height: 13px;
+	background: #ffffff url(../images/camed/basebottom.gif) no-repeat center bottom;
+}
+
+.layoutTop {
+	background: #f5f5f5 url(../images/camed/layouttop3.gif) no-repeat center bottom;
+	height: 2px
+}
+
+.layoutTopaba {
+	background: #ffffff url(../images/camed/toplayoutaba.gif) no-repeat center bottom;
+	height: 28px;
+	border-top: 1px solid #acb0b5;
+	/*border-left: 1px solid #acb0b5;
+	border-right: 1px solid #acb0b5;*/
+}
+
+.layoutTopaba2 {
+	background: #eccead;
+	/*background: url(../images/camed/layouttoptextoaba.gif) no-repeat center bottom;*/
+	border-left: 1px solid #d9c8bf;
+	border-right: 1px solid #d9c8bf;
+	border-top: 1px solid #d9c8bf;
+	height: 5px;
+	border-top: 0px solid #ffffff;
+}
+
+.input-trans {
+	font: normal 11px Geneva, Arial, Helvetica, sans-serif;
+	height: 13px;
+	border: none;
+	background: transparent;
+}
+
+.inputprocura {
+	height: 18px;
+	width: auto;
+	margin: 0px;
+	border: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	float: left;
+	background: url(../images/camed/botoes/fundo_caixa_texto.gif) no-repeat;
+}
+
+.radiobutton {
+	margin-right: 1px;
+	color: #009900;
+	border: 0px;
+}
+
+.submit {
+	background: url(../images/camed/bg_botao_cinza.gif) repeat-x;
+	border: 2px double;
+	font-weight: bold;
+	border-color: #c4cccc #acb5b5 #6f7777 #acb5b5;
+	height: 21px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	cursor: pointer;
+}
+
+.botaodata {
+	width: 19px;
+	height: 18px;
+	border: 0px;
+	cursor: pointer;
+	background: url(../images/camed/botoes/calendario.gif) no-repeat;
+	float: left; /*right*/
+	margin-right: 10px;
+}
+
+.botaonovo {
+	width: 19px;
+	height: 18px;
+	margin: 0px;
+	border: 0px;
+	background: url(../images/camed/botoes/botao_novo.gif) no-repeat;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.botaoLove {
+	width: 17px;
+	height: 17px;
+	margin: 0px;
+	border: 0px;
+	background: url(../images/camed/botoes/botaolove.gif) no-repeat;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.botaoPasta {
+	width: 16px;
+	height: 13px;
+	margin: 0px;
+	border: 0px;
+	background: url(../images/camed/botoes/pasta.gif) no-repeat;
+	float: left;
+	margin-right: 10px;
+	cursor: hand;
+}
+
+.botaoErro {
+	width: 45px;
+	height: 36px;
+	margin: 0px;
+	border: 0px;
+	background: url(../images/camed/botoes/erro.gif) no-repeat;
+	cursor: inherit;
+}
+
+.botaoConfirmar {
+	width: 32px;
+	height: 32px;
+	margin: 0px;
+	border: 0px;
+	background: url(../images/camed/botoes/confirmar.gif) no-repeat;
+	cursor: inherit;
+}
+
+.botaoLupa {
+	width: 19px;
+	height: 18px;
+	margin: 0px;
+	border: 0px;
+	background: url(../images/camed/botoes/botao_lupa_normal.gif) no-repeat;
+	margin-left: -3px;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.botaoLupaSemMargem {
+	width: 19px;
+	height: 18px;
+	margin: 0px;
+	border: 0px;
+	background: url(../images/camed/botoes/botao_lupa_normal.gif) no-repeat;
+	margin-left: -3px;
+	float: left;
+	margin-right: 0px;
+	cursor: pointer;
+}
+
+.botaoLupaGrande {
+	width: 19px;
+	height: 42px;
+	margin: 0px;
+	border: 0px;
+	background: url(../images/camed/botoes/botao_lupa_grande.gif) no-repeat;
+	margin-left: -3px;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.botaoCorretor {
+	background: url(../images/camed/botoes/b_corretor.gif) no-repeat;
+	height: 18px;
+	width: 19px;
+	margin: 0px;
+	border: 0px;
+	cursor: hand;
+	background-repeat: no-repeat;
+	margin-left: -3px;
+	margin-right: 10px;
+}
+
+.botaoExcluir {
+	background: url(../images/camed/botaodelete.gif) no-repeat;
+	width: 17px;
+	height: 17px;
+	margin: 0px;
+	border: 0px;
+	cursor: auto;
+}
+
+.barraNavegacao {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	background-color: #eccead;
+	border: 2px;
+	border-color: #000000;
+}
+
+.botaoSetaPrimeiro {
+	background: url(../images/camed/botoes/botao_seta_primeira.gif) no-repeat;
+	width: 26px;
+	height: 22px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.botaoSetaAnterior {
+	background: url(../images/camed/botoes/botao_seta_anterior.gif) no-repeat;
+	width: 26px;
+	height: 22px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.botaoSetaProximo {
+	background: url(../images/camed/botoes/botao_seta_proximo.gif) no-repeat;
+	width: 26px;
+	height: 22px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.botaoSetaUltima {
+	background: url(../images/camed/botoes/botao_seta_ultima.gif) no-repeat;
+	width: 26px;
+	height: 22px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.textareaAjuda {
+	color: #000000;
+	font: normal 10pt Geneva, Arial, Helvetica, sans-serif;
+	border: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 150px;
+	overflow: auto;
+	background: transparent;
+}
+
+.linhatable {
+	border: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	vertical-align: middle;
+	color: #000000;
+}
+
+.imagemAcrobat{
+	background: url(../images/camed/acrobat.gif) no-repeat;
+	width: 88px;
+	height: 31px;
+	border: 0px;
+	cursor: hand;
+}
+
+.manual {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.manual:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: underline;;
+}
+
+#rodape {
+	background: #E2E7ED url(../images/camed/barra_bg_tabela_filho_baixo.gif)
+		repeat center top;
+	height: 41px;
+	text-align: center;
+	color: #000000;
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-indent: 3px;
+}
+
+.fonteh6 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	text-indent: 5px;
+	vertical-align: middle;
+	color: #000000;
+}
+
+.msn {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.fonteh3 {
+	PADDING-left: 0.5em;
+	BORDER-left: #778 1px solid;
+	border-bottom:1px solid #919194;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	text-indent: 2px;
+	vertical-align: middle;
+	color: #000000;
+}
+
+/*.fonteh3 {
+	PADDING-left: 0.5em;
+	BORDER-left: #778 1px solid;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	text-indent: 2px;
+	vertical-align: middle;
+	color: #000000;
+}*/
+
+.selectprocura {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	margin: 0px;
+	background: url(../images/camed/botoes/fundo_textarea.gif) no-repeat;
+	/*background: #FFFFFF;*/
+	border: 1px solid #7f9db9;
+	border-right: 0px;
+	width: 250px;
+	height: 42px;
+	float: left;
+}
+
+.corbarraacimafilho {
+	background: #E2E7ED url(../images/camed/barra_bg_janela_popup_fecha.gif);
+	height: 22px;
+}
+
+#data-cab {
+	position: absolute;
+	left: 14px;
+	top: 4px;
+	width: 267px;
+	height: 19px;
+	font: normal 11px Geneva, Arial, Helvetica, sans-serif;
+	color: #ffeeef;
+	z-index: 4;
+}
+
+#desenv-cab {
+	position: absolute;
+	right: 10px;
+	top: 2px;
+	width: 180px;
+	height: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-align: right;
+	z-index: 5;
+	line-height: 20px;
+}
+
+#cor-menu {
+	position: absolute;
+	left: 15px;
+}
+
+.usuario {
+	font: normal 11px Geneva, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-indent: 15px;
+	padding-top: 2px;
+	background: #92000d url(../images/camed/bg_usuario.gif) repeat-x;
+	position: absolute;
+	right: 0px;
+	height: 19px;
+	width: 200px;
+}
+
+.saida {
+	font: bold 11px Geneva, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-indent: 15px;
+	vertical-align: inherit;
+	padding-top: 2px;
+	background: #92000d url(../images/camed/bg_saida.gif) no-repeat;
+	width: 48px;
+	position: absolute;
+	right: 203px;
+	height: 19px;
+}
+
+#cor-linha-menu { /*background: #fed3a8;*/
+	background: #ffcccc url(../images/camed/cor_linha_menu.gif) repeat-x;
+	height: 20px;
+	width: 100%;
+	/*top:66px;*/
+	top: 44px;
+	position: absolute;
+	z-index: 6;
+}
+
+#cabecalho { /*Alterado*/
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	/*height:66px;
+	background:url(../images/cab_03.gif) repeat-x;*/
+	height: 44px;
+	background: url(../images/camed/cab_033.gif) repeat-x;
+	z-index: 1;
+}
+
+#logo-sup {
+	left: 0px;
+	position: absolute;
+	background: url(../images/camed/cab_bv2.gif) no-repeat;
+	height: 44px;
+	width: 414px;
+	z-index: 2;
+}
+
+#logoClienteAplic {
+	background: url(../images/camed/cab_bv2.gif) no-repeat;
+	height: 44px;
+	width: 195px;
+}
+
+#logo-bv{
+	background: url(../images/camed/logo_bv.gif) no-repeat;
+	height: 50px;
+	width: 400px;
+	z-index: -1;
+	border: #334194 1px solid ;
+}
+
+#logo-d {
+	right: 0px;
+	top: 0px;
+	position: absolute;
+	/*background: #000000 url(../images/camed/cab_022.gif) no-repeat;*/
+	height: 44px;
+	width: 164px;
+	z-index: 3;
+}
+
+.sairlink {
+	font: bold 11px Geneva, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.sairlink:hover {
+	font: bold 11px Geneva, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+/* ------------Regras do modulo dinâmico -------------*/
+.caixamodulo{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight:normal;
+	color: #000000;
+	border: 1px solid #A5B5BE;
+	margin-right:0px;
+	/*float:left;*/
+}
+
+/*.caixamodulo {
+	font: normal 11px Geneva, Arial, Helvetica, sans-serif;
+	color: #000000;
+	border: 1px solid #A5B5BE;
+	margin-right: 0px;
+	width: auto;
+}
+*/
+
+.checkmodulo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	margin-right: 5px;
+	border: 0px;
+}
+
+h2 {
+	color: #000000; /*#476788;*/
+	font-size: 10px;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	/*text-indent: 1px;*/
+	vertical-align: bottom;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+
+.botaoajudamodulo {
+	/*float: none;
+	margin-left: -4px;
+	margin-right: 5px;
+	cursor: pointer;
+	background: url(../images/camed/ajudamodulo.gif) no-repeat;
+	width: 11px;
+	height: 17px;
+	border: 0;*/
+
+	cursor:pointer;
+	position:inherit;
+	margin-left: -4px;
+	background:url(../images/camed/ajudamodulo.gif) no-repeat;
+	border:0px;
+	width:11px;
+	height:17px;
+	vertical-align:top;
+	/*float:left;*/
+}
+
+.ajudamodulo {
+	float: inherit;
+	margin-left: -5px;
+	cursor: pointer;
+	position: absolute;
+}
+
+.modulo { /*Modulos dos campos dinâmicos - div -*/
+	margin-right: 0px;
+	margin-left:0px;
+	margin-bottom: 0px;
+	width: auto;
+	height: 28px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 3px;
+	float: left;
+}
+
+.modulo2 { /*Modulos dos campos dinâmicos - div -*/
+	margin-right: 5px;
+	/*margin-left:0px;*/
+	margin-bottom: 7px;
+	width: auto;
+	height: auto;
+	padding-left: 5px;
+	padding-right: 10px;
+	float: left;
+}
+
+#moduloprincipal {
+	position: static;
+	width: auto;
+	/*border:1px solid #dbcac1;*/
+	padding: 0px;
+	/*	background:#ebe5e6;*/
+	float: left;
+}
+
+.modulo-top {
+	background: #bba8a8;
+	border: 1px solid #d9c8bf;
+	height: 13px;
+	width: 588px;
+	margin-bottom: 5px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-indent: 12px;
+	padding-top: 3px;
+}
+
+#modulo-limpar {
+	clear: left;
+	height: 0px;
+	width: 0px;
+	border: 0px;
+	/*background: #ebe5e6;*/
+}
+/*--------------------------------------------------*/
+
+.linhasgrid {
+	margin: 0 1px;
+	line-height: 1.35em;
+	border-bottom: 1px solid #CFD7DB;
+	border-left-color: #ffffff;
+	border-right-color: #ffffff;
+	height: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+	text-indent: 3px;
+	color: #000000;
+	cursor: hand;
+}
+
+.linhasgrid2 {
+	background: #F1E6DA;
+	text-indent: 3px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #000000;
+}
+
+#fundoaba {
+	/*height: 0px;
+	margin: 0px;
+	display: inherit;
+	background-position: bottom;
+	vertical-align: bottom;
+	background-attachment: fixed;
+	background: url(../images/bnb/layouttoptextoaba3.gif) no-repeat center bottom;*/
+	
+	height: 18px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-indent: 12px;
+	vertical-align: middle;
+	background-color: #ECCEAD;
+}
+
+#fundoabaDadosPrincipalCondutor h5 {
+	height: 16px;
+	margin: 0px;
+	display: inherit;
+	background-position: bottom;
+	vertical-align: bottom;
+	background-attachment: fixed;
+	background: url(../images/camed/layouttoptextoaba3.gif) no-repeat center
+		bottom;
+}
+
+#molduratabla {
+	BORDER-RIGHT: 0px;
+	PADDING-RIGHT: 0px;
+	BORDER-TOP: 0PX;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	BORDER-LEFT: 0px;
+	WIDTH: 98%;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: 0px;
+}
+
+.barrafonte {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	text-indent: 6px;
+	color: #000000;
+}
+
+.barra-titulo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #90A1B3;
+}
+
+.linhas {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	padding-left: 7px;
+	color: #000000;
+	background-color: #BFCFDB;
+}
+
+.linhas1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	padding-left: 7px;
+	background-color: #ffffff;
+}
+
+.cabec-linhas {
+	background: url(../images/back_top.gif);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 7px;
+}
+
+.tabelaprincipal {
+	background-color: #F5F7F8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	width: 100%;
+}
+
+.layouttexto {
+	width: 99%;
+	padding-right: 1px;
+	padding-left: 1px;
+	margin: 0 auto;
+	margin-top: 0px;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+	text-indent: 3px;
+	background: url(../images/camed/corpolayouttexto.gif) repeat-y center top;
+}
+
+.baseBottomtexto {
+	height: 4px;
+	background: #E8E8E9 url(../images/camed/basebottomtexto.gif) no-repeat center bottom;
+}
+
+.layoutToptexto {
+	background: #F8F9F9 url(../images/camed/layouttoptexto.gif) no-repeat center bottom;
+	height: 5px;
+}
+
+.layoutform {
+	padding-right: 1px;
+	padding-left: 0px;
+	margin: 0 auto;
+	margin-top: 5px;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.tabcontent {
+	DISPLAY: none
+}
+
+#tablist {
+	PADDING-RIGHT: 0px;
+	MARGIN-TOP: 0.1em;
+	PADDING-LEFT: 0px;
+	MARGIN-BOTTOM: 0px;
+	PADDING-BOTTOM: 3px;
+	FONT: bold 11px Verdana;
+	MARGIN-LEFT: 0px;
+	PADDING-TOP: 3px;
+	background: #ffffff url(../images/camed/fundomenu.gif);
+	height: 22px;
+}
+
+#tablist2 {
+	PADDING-RIGHT: 0px;
+	MARGIN-TOP: 0.1em;
+	PADDING-LEFT: 0px;
+	MARGIN-BOTTOM: 0px;
+	PADDING-BOTTOM: 3px;
+	FONT: bold 11px Verdana;
+	MARGIN-LEFT: 0px;
+	PADDING-TOP: 3px;
+	background: #ffffff url(../images/camed/fundomenu2.gif);
+	height: 7px;
+}
+
+#tablist LI {
+	DISPLAY: inline;
+	MARGIN: 0px;
+	LIST-STYLE-TYPE: none;
+	BACKGROUND: #DDDEDE;
+}
+
+#tablist LI A {
+	BORDER-RIGHT: #778 1px solid;
+	BORDER-TOP: #FFFFFF 1px solid;
+	BORDER-LEFT: #FFFFFF 1px solid;
+	BORDER-BOTTOM: #778 1px solid;
+	PADDING-LEFT: 0.5em;
+	PADDING-BOTTOM: 3px;
+	MARGIN-LEFT: 3px;
+	PADDING-RIGHT: 0.5em;
+	PADDING-TOP: 3px;
+	/*	BORDER-BOTTOM: medium none;
+	BACKGROUND: #DDDEDE
+	BACKGROUND: white;*/
+}
+
+#tablist LI A:link {
+	COLOR: #4b4b4b;
+	text-decoration: none;
+}
+
+#tablist LI A:visited {
+	COLOR: #4b4b4b;
+	text-decoration: none;
+}
+
+#tablist LI A.ativa {
+	BACKGROUND: #ffffff
+}
+
+.paginafilho {
+	width: 100%;
+	background-color: #FFFFFF;
+	padding: 0px;
+	border: 1px solid #a7b8c1;
+	/*background: #ffffff url(../images/camed/barra_bg_tabela_filho_corpo.gif) repeat center top;
+	border: 1px solid #dbcac1;*/
+}
+
+.paginasimples {
+	width: 400px;
+	background: #ffffff url(../images/camed/barra_bg_tabela_filho_corpo.gif)
+		repeat center top;
+	padding: 0px;
+	border: 1px solid #A5B5BE;
+}
+
+.paginasimples2 {
+	width: 100%;
+	background: #ffffff url(../images/camed/barra_bg_tabela_filho_corpo.gif) repeat center top;
+	padding: 0px;
+	border: 1px solid #A5B5BE;
+}
+
+.barramenufilho {
+	background: #E2E7ED url(../images/camed/barra_bg_tabela_filho.gif) repeat	center top;
+	height: 20px;
+	border-bottom:1px solid #919194;
+}
+
+/*Animação*/
+#wisani {
+	margin: 0px;
+	position: absolute;
+	left: 2%;
+	bottom: 30%;
+	width: auto;
+	height: auto;
+	background: transparent url(../images/camed/filtro2.gif) center repeat;
+	visibility: hidden;
+	cursor: wait;
+	z-index: 30;
+}
+
+#wisani2 {
+	position: relative;
+	padding-top: 12px;
+	width: 310px;
+	height: 40px;
+	border: 1px double #000000;
+	background: #f6f7f7 url(../images/camed/processando_ani2.gif) no-repeat;
+	text-align: center;
+	vertical-align: middle;
+	cursor: wait;
+	bottom: 4px;
+	right: 2px;
+	z-index: 31;
+}
+
+/****************Código para o ToolTip********/
+#dhtmlwis {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 10px;
+	PADDING-LEFT: 2px;
+	PADDING-RIGHT: 2px;
+	PADDING-TOP: 2px;
+	PADDING-BOTTOM: 2px;
+	BORDER-LEFT: #ECCEAD 2px solid;
+	BORDER-RIGHT: #ECCEAD 2px solid;
+	BORDER-TOP: #ECCEAD 2px solid;
+	BORDER-BOTTOM: #ECCEAD 2px solid;
+	WIDTH: 250px;
+	BACKGROUND-COLOR: #F1E6DA;
+	POSITION: absolute;
+	FILTER: progid:DXImageTransform.Microsoft.Shadow(color = gray, direction = 135);
+	VISIBILITY: hidden;
+	TEXT-DECORATION: none;
+	Z-INDEX: 100;
+}
+/********************************************/
+
+/* responsável pela <tr> dos labels dos campos de filtro */
+.clsTrLabelFiltro {
+	
+}
+
+/* responsável pela <tr> dos campos de filtro */
+.clsTrCampoFiltro {
+	
+}
+
+/* responsável pelos campos de filtro */
+.clsTxtCampoFiltro {
+	
+}
+
+/* responsável pela <td> dos radios de filtro */
+.clsTdRadioFiltro {
+	
+}
+
+/* responsável pela <tr> dos registros */
+.clsTrRegistro {
+	
+}
+
+/* responsável pelo link dos registros */
+.clsARegistro {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+
+/* responsável pela <tr> da indicação das páginas */
+.clsTrPagina {
+	
+}
+
+/* responsável pela <td> da indicação das páginas */
+.clsTdPagina {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-position: center;
+	text-align: right;
+}
+
+/* responsável pelo tamanho total da tela de Lov */
+.clsTabTot {
+	width: 290px;
+	border: none;
+	background-color: #F5F7F8;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-position: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* responsável pelo cabeçalho da tela */
+.clsCabTela {
+	background-image: url(../images/camed/back_top.gif);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: White;
+}
+
+.clsTabApel {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: #C7D0D9;
+	padding: 2px;
+	padding-bottom: 2px;
+}
+
+.clsARegistro:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: underline;
+}
+
+/* responsável pela <td> dos labels dos campos de filtro */
+.clsTdLabelFiltro {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+}
+
+/* responsável pela <td> dos campos de filtro */
+.clsTdCampoFiltro {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+/* responsável pela <tr> dos radios de filtro */
+.clsTrRadioFiltro {
+	
+}
+
+/* responsável pelos radios de filtro */
+.clsRdRadioFiltro {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-position: center;
+	text-align: left;
+}
+
+/* responsável pela <tr> dos labels das colunas */
+.clsTrLabelColuna {
+	
+}
+
+/* responsável pela <td> dos labels das colunas */
+.clsTdLabelColuna {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #90A1B3;
+}
+
+/* responsável pela <td> dos registros */
+.clsTdRegistro {
+	background-color: #BDC7D2;
+}
+
+/* responsável pela <td> do botão de pesquisa */
+.clsTdPesquisa {
+	font-family: Arial, Helvetica, sans-serif;
+	color: Black;
+	font-weight: normal;
+	font-size: 8px;
+}
+
+/* responsável pelo botão de pesquisa */
+.clsBtPesquisa {
+	background-image: url(../images/camed/botao80.gif);
+	height: 20px;
+	width: 86px;
+	border: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 550;
+	cursor: hand;
+	/*background-image: url(file:///E|/WWW/kits-ancora/telas_ancora/images/botoes/bot_lov_pesq.gif);
+	width: 70px;
+	height: 18px;
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000; */
+}
+
+/* responsável pelo botão de pesquisa */
+.clsBtAnterior {
+	background-image: url(../images/botoes/bot_lov_pesq.gif);
+	width: 70px;
+	height: 18px;
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+
+/* responsável pelo botão de pesquisa */
+.clsBtProximo {
+	background-image: url(../images/botoes/bot_lov_pesq.gif);
+	width: 70px;
+	height: 18px;
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}

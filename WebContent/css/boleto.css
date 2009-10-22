@@ -1,0 +1,90 @@
+.cellTitle
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	color: #000000;
+	vertical-align: top;
+	white-space: nowrap;
+}
+.cellTitleB
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8px;
+	color: #000000;
+	vertical-align: bottom;
+	white-space: nowrap;
+}
+.cellBody
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	vertical-align: bottom;
+}
+.cellBodyD
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	font-weight: bold;
+}
+.ipte
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	text-align: right;
+	font-weight: bold;
+	vertical-align: bottom;
+	white-space: nowrap;
+}
+.numBanco
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000000;
+	text-align: justify;
+	font-weight: bold;
+}
+.divisor
+{
+	border-color: #000000;
+	text-align: center;
+	border-style: dashed;
+}
+.tabela
+{
+	border-color: #000000;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.bottonLine
+{
+	border-color: #000000;
+	border-style: solid;
+	border-bottom-width: 1px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+.bottonLineR
+{
+	border-color: #000000;
+	border-style: solid;
+	border-bottom-width: 1px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 1px;
+}
+.rightLine
+{
+	border-color: #000000;
+	border-style: solid;
+	border-bottom-width: 0px;
+	border-top-width: 0px;
+	border-left-width: 0px;
+	border-right-width: 1px;
+}
+
+

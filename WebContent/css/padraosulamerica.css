@@ -1,0 +1,1341 @@
+/* CSS Document
+Regras para o layout dos formulários 
+Todas as regras de CSS estão neste arquivo
+Bernardo Neto
+última Alteração 11 de Abril de 2008
+*/
+
+@charset "UTF-8";
+
+
+
+@import url("calendario.css"); 		/*Calendário*/
+@import url("tabcontent.css"); 		/*Abas de navegação*/
+@import url("menuHorizontal.css"); 	/*Calendário*/
+@import url("menuBarVertical.css"); /*Abas de navegação*/
+@import url("thickbox.css"); 		/*PopUp ShowModal*/
+
+
+* { 
+	text-decoration:none;
+	margin:0;
+	padding:0px;
+	list-style:none;
+	border:0px;
+	font-family:verdana, arial;
+	font-size:10px;
+	color:#000066;
+}
+body {
+	margin-bottom:7px;
+	SCROLLBAR-FACE-COLOR: #CCCCCC;
+	SCROLLBAR-TRACK-COLOR: #E7E7E7;
+	SCROLLBAR-BASE-COLOR: #FF6600;
+	SCROLLBAR-ARROW-COLOR: #666666;
+	SCROLLBAR-3DLIGHT-COLOR: #E7E7E7;
+	SCROLLBAR-HIGHLIGHT-COLOR: #666666;
+	SCROLLBAR-DARKSHADOW-COLOR: #E7E7E7;
+	SCROLLBAR-SHADOW-COLOR: #666666;
+}
+#formPrincipal {
+	margin-top:30px;/*4%*/
+	margin-bottom:20px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	width:90%;
+	height:auto;
+}
+.imagetopform{
+	font-family:Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#3A6FA2;
+	font-weight:bold;
+	border-bottom:2px solid #F7AE4D;
+	margin-bottom:8px;
+	width:auto;
+}
+.conteudo {
+	border:1px solid #F7AE4D;
+	background-color:#E1EDF7;
+	margin-bottom:6px; 
+	padding:4px 0 4px 4px;
+	position:static;
+	width:auto;/*100%;698px;*/
+	height:auto;
+	float: left;
+}
+.conteudo-aba  {
+	background:#abc5e0;
+	margin-bottom:18px;
+	margin-left:-1px;
+	padding:4px;
+	position:static;
+	width:100%;
+	height:auto;
+	display: block;
+	float: left;
+	padding-bottom:3px;
+}
+.modulo-aba-conteudo {
+	margin-top:-10px;
+	border:1px solid #F7AE4D;
+	background:#ffffff;
+	margin-bottom:14px;
+	position:static;
+	width:99.5%;
+	float: left;
+	padding:5px 5px 5px 5px;
+}
+.modulo-aba-conteudo .conteudo {
+	width:99%;
+}
+label {
+	font-weight:bold;
+	margin:3px;
+	white-space:nowrap;
+	font-size:10px;
+}
+label img {
+	margin-right:2px;
+	margin-bottom:1px;
+	vertical-align:middle;
+	text-align:left;
+	border:none;
+	cursor:help;
+}
+.msn {
+	font-weight:bold;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	margin:3px;
+	font-size:8pt;
+}
+input {
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border: 1px solid #7f9db9;	
+	bottom:1px;
+	vertical-align:bottom;
+	height:15px;
+	margin-left:3px;
+}
+input.campos {
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border: 1px solid #7f9db9;
+	float:left;
+	bottom:1px;
+	vertical-align:bottom;
+	padding-right:16px;
+}
+.botaocalendario-inativo {	
+	width:18px;
+	height:15px;
+	border:0px;
+	margin-left:-19px;
+	cursor:auto;
+	float:left;
+	clear:right;
+	background: url(../images/sulamerica/botao_calendario_inativo.gif) no-repeat center center !important;
+	margin-top:1px;
+}
+input.botaocalendario {
+	width:18px;
+	height:15px;
+	border:0px;
+	margin-left:-19px;
+	cursor:pointer ;
+	float:left;
+	clear:right;
+	background: url(../images/sulamerica/botao_calendario.gif) no-repeat center center !important;
+	margin-top:1px;
+}
+.botaopronormal {
+	width:18px;
+	height:15px;
+	border:0px;
+	margin-left:-19px;
+	cursor:pointer;
+	float:left;
+	clear:right;
+	background: url(../images/sulamerica/botao_lupa_normal.gif) no-repeat center center !important;
+	margin-top:1px;	
+}
+.botaoprocura {
+	width:25px;
+	height:17px;
+	border:0px;
+	background: url(../images/sulamerica/botao_lupa_procura.gif) no-repeat;
+	margin-left:-1px;
+	float:left;
+	cursor:pointer;
+	clear:right;
+}
+.input-trans {
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight:bold;
+	border: 1px solid #7f9db9;
+	background-color: #ededeb;
+	float:left;
+}
+.valor {
+	text-align:right;
+	border:0;
+	background-color:transparent;
+}
+.check {
+	border:0;
+	vertical-align:middle;
+}
+.radio {
+	border:0;
+	margin-top:3px;
+	vertical-align:middle;
+	float:left;
+}
+select, textarea {
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	padding:0;
+	border: 1px solid #7f9db9;
+}
+select.campos-select {
+	float:left;
+}
+.botao3 {
+	border:1px #000066 solid;
+	padding:0;
+	margin:0;
+	font-size:10px;
+	font-weight:bold;
+	height:20px;
+	background-color:#E1EDF7;
+	text-align:center;
+	cursor: hand;
+	margin-left:10px;
+}
+.modulo .botao3 {
+	padding:0;
+	height:18px;
+}
+.bota-deletar {
+	background:url(../images/sulamerica/botaodelete.gif);
+	border:0;
+	width:17px;
+	height:17px;
+	cursor:pointer;
+	text-align:center;
+}
+.modulo {
+	width:auto;
+	height:31px;
+	float:left;
+	margin-bottom:3px;
+	vertical-align:baseline;
+	border:0;
+	display:inline;
+	position:static;
+	margin-left:8px;
+	left:12px;
+}
+.erro {
+	width:auto;
+	height:10px;
+	clear:left;
+	margin-bottom:6px;
+	margin-right:12px;
+	left:10px;
+	vertical-align:baseline;
+	border:0;
+	display: block;
+	position:static;
+	color:#FF0000;
+	font-weight:bold;
+}
+.modulo-aba {
+	width:100%;
+	float:left;
+	margin-bottom:9px;
+	left:10px;
+	vertical-align:baseline;
+	border:0;
+	display: block;
+	position:static;
+}
+
+.modulo-c-t {
+	width:360px;
+	height:auto;
+	float:left;
+	margin-bottom:3px;
+	margin-right:8px;
+	left:10px;
+	vertical-align:baseline;
+	display: block;
+	position:static;
+}
+#modulo-limpar { /*modulo separador*/
+	clear: left;
+	height:1px;
+	width:0;
+	border:0;
+	margin:0;
+	padding:0;
+}
+.caption {
+		font-size:11px;
+		font-weight:bold;
+		color:#F7AE4D;
+		text-align:left;
+		padding-left:3px;
+		padding-bottom:1px;
+		white-space:nowrap;
+		text-indent:5px;
+		clear:left;
+}
+
+.caption img {
+	margin-right:2px;
+	margin-bottom:1px;
+	vertical-align:middle;
+	text-align:left;
+	border:none;
+	cursor:help;
+	clear:left
+}
+
+#layerbotao {
+	clear: left;
+	margin-top:0px;
+	margin-bottom:0px;
+	height:24px;
+	padding:1px;
+	text-align: center;
+	display: block;
+	width:auto;
+
+} 
+fieldset  {
+	padding: 1px;
+	padding-bottom:5px;
+	padding-top:1px;
+	border:1px solid #F7AE4D;
+	width: auto;
+	margin:2px 6px 10px 6px;
+	clear:left;
+}
+legend  {
+	font-family:  Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:bold;
+	color:#000066;
+	background: #F7AE4D;
+	padding:2px 4px 2px 4px;
+	width:auto;
+	height: auto;
+	margin-bottom:8px;
+	
+}
+hr {
+	width:100%;
+	margin-bottom:2px;
+	border-bottom:1px solid #7f9db9;
+	border-top:1px solid #ffffff;
+	clear:left;
+}
+th {
+	background:#6A97C6;
+	height:15px;
+}
+tr.linhaazul{
+	background-color:#e1edf7;
+	height:13px;
+}
+tr.linhaBranca{
+	background-color:#ffffff;
+	height:13px;
+}
+td {
+	padding-left:3px;
+	padding-bottom:3px;
+}
+table.conteudoComTituloAzulSemBorda {
+	background:#FFFFFF;
+	border-collapse:separate;
+	width:98%; /*Alterado aqui -  98%  - 12 de Fevereiro*/ 
+}
+table.conteudoComTituloAzulSemBorda .campos-select {
+	margin:0;
+	clear:both;
+}
+table.conteudoComTituloAzulSemBorda .campos {
+	margin:0;
+	text-align: right;
+	border: 1px solid #7f9db9;
+	padding-right:2px;
+	float:none;
+	width:93%;
+} 
+
+
+/*criado em 9 de junnho de 2008*/
+table.conteudoComTituloAzul {
+	background:#FFFFFF;
+	border-collapse:separate;
+	width:98%; /*Alterado aqui - 98%  - 12 de Fevereiro*/ 
+}
+table.conteudoComTituloAzul .campos-select {
+	margin:0;
+	clear:both;
+}
+table.conteudoComTituloAzul .campos {
+	margin:0;
+	text-align: right;
+	border: 1px solid #7f9db9;
+	padding-right:2px;
+	float:left;
+	width:auto;
+} 
+/**/
+
+
+
+
+table input.campos {
+	margin:0;
+	text-align: left;
+	border: 1px solid #7f9db9;
+	padding-left:2px;
+/*	float:none;*/
+	width:70%;
+}
+/*cabeçalho*/
+#cabecalho { 
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 100px;
+	background: #ffffff;
+}
+#linha-laranja {
+	background:#FF6600;
+	height:6px;
+	font-size:0;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+#linha-azul {
+	padding:0;
+	font-size:0;
+	margin:0;
+	background:#000066;
+	height:6px;
+	width:215px;
+	margin-left:0;
+}
+#logo-esquerdo {
+	width:175px;
+	height:54px;
+	margin-left:15px;
+	margin-top:10px;
+	margin-bottom:10px;
+	background: url(../images/sulamerica/logo_sulamerica.gif) no-repeat;
+}
+#logo-direito {
+	width:82px;
+	height:56px;
+	right:15px;
+	top:15px;
+	background: url(../images/sulamerica/logo_senainformatica.gif) no-repeat;
+	position:absolute;
+}
+#desenv-cab {
+	position: absolute;
+	right: 109px;
+	top: 25px;
+	width: 180px;
+	height: auto;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000066;
+	text-align: right;
+	line-height: 18px;
+}
+.manual {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000066;
+	text-decoration: none;
+}
+.manual:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000066;
+	text-decoration: underline;;
+}
+.usuario {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000066;
+	position: absolute;
+	left: 217px;
+	top:45px;
+	width: 200px;
+}
+#cor-linha-menu { 
+	background: #000066;
+	height: 23px;
+	width: 100%;
+	bottom:0;
+	left:0;
+	position: absolute;
+	vertical-align:bottom;
+}
+#cor-linha-menu .barraDireita {
+	width: auto;
+	position: absolute;
+	right: 120px;/*60px;*/
+/*	border-left:1px solid #FFF;*/
+	height:20px;
+	padding-top:3px;
+	padding-left: 8px;
+}
+.menu-select {
+	margin-top:2px;
+}
+.saida {
+	width: 30px;
+	position: absolute;
+	right: 10px;
+	text-align:right;
+	border-left:1px solid #FFFFFF;
+	height:21px;
+	padding-top:5px;
+}
+.sairlink {
+	font-size: 11px;
+	font-weight:bold;
+	font-family: MS Sans Serif,arial;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.sairlink:hover {
+	color: #ffcc00;
+	text-decoration:none;
+}
+.solicitante { /*Alteração 11 de Abril 2008*/
+	right:10px;
+	top:2px;
+	position:static;
+	float:right;
+	text-align:right;
+	margin-left:8px;
+	margin-right:10px;
+}
+/*LOGIN*/
+#formlogin {
+	margin-top:15%;
+	margin-left:auto;
+	margin-right:auto;
+	width:450px;
+	height:auto;
+	border:2px solid #000066;
+}
+#formlogin .conteudo {
+	border:1px solid #F7AE4D;
+	background-color:#E1EDF7;
+	margin-bottom:18px;
+	padding:4px 0 4px 4px;
+	position:static;
+	width:436px;
+	height:auto;
+	float: left;
+}
+#cabecalho-login { 
+	top: 0px;
+	width: 100%;
+	height: 80px;
+	background: #ffffff;
+	border:1px solid 000066;
+
+}
+#desenv-cab-login {
+	margin-left: 330px;
+	margin-top: -25px;
+	width: 100px;
+	height: auto;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000066;
+	text-align: right;
+	line-height: 18px;
+}
+#formlogin .imagetopform{
+	font-family:Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#3A6FA2;
+	font-weight:bold;
+	border-bottom:2px solid #F7AE4D;
+	margin-bottom:15px;
+	width:auto;
+	text-indent:10px;
+}
+/*FIM DO LOGIN*/
+
+/*POPUP*/
+#formpopup {
+	margin-left:0;
+	width:auto;/*450*/
+	height:auto;
+	border:2px solid #000066;
+}
+
+#formpopup .imagetopform{
+	font-family:Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#3A6FA2;
+	font-weight:bold;
+	border-bottom:none; /*2px solid #F7AE4D;*/
+	margin-top:15px;
+	margin-bottom:15px;
+	width:100%;
+	text-indent:10px;
+}
+#formpopup .conteudo {
+	border:1px solid #F7AE4D;
+	background-color:#E1EDF7;
+	margin-bottom:18px;
+	padding:4px 0 4px 4px;
+	margin-left:2px;
+	margin-right:2px;
+	position:static;
+	width:97%;
+	height:auto;
+	float: left;
+}
+#formpopup .conteudo .campos-select {
+	margin-left:3px;
+}
+#formpopup .conteudo-bloco .conteudo .modulo label img {
+	margin-right:2px;
+	margin-bottom:1px;
+	vertical-align:middle;
+	text-align:left;
+	border:none;
+	cursor:help;
+	clear:left
+}
+
+#formpopup .modulo-c-t {
+	width:120px;
+	height:15px;
+	float:left;
+	margin-bottom:3px;
+	margin-right:8px;
+	left:10px;
+	vertical-align:baseline;
+	display: block;
+	position:static;
+}
+#formpopup #layerbotao   {
+	background:#000066;
+	padding-top:3px;
+	height:21px;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+
+
+
+.TB-formpopup{
+	margin-left:0;
+	width:auto;/*450*/
+	height:auto;
+	border:2px solid #000066;
+}
+.TB-formpopup .imagetopform{
+	font-family:Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#3A6FA2;
+	font-weight:bold;
+	border-bottom:none; /*2px solid #F7AE4D;*/
+	margin-top:15px;
+	margin-bottom:15px;
+	width:100%;
+	text-indent:10px;
+}
+.TB-formpopup .conteudo-bloco .conteudo {
+	border:1px solid #F7AE4D;
+	background-color:#E1EDF7;
+	margin-bottom:18px;
+	padding:4px 0 4px 4px;
+	margin-left:2px;
+	margin-right:2px;
+	position:static;
+	width:97%;
+	height:auto;
+	float: left;
+	
+	font-size:8pt;
+
+}
+
+
+.TB-formpopup .conteudo .campos-select {
+	margin-left:3px;
+}
+.TB-formpopup .conteudo-bloco .conteudo .modulo label img {
+	margin-right:2px;
+	margin-bottom:1px;
+	vertical-align:middle;
+	text-align:left;
+	border:none;
+	cursor:help;
+	clear:left
+}
+.TB-formpopup #layerbotao   {
+	background:#000066;
+	padding-top:3px;
+	height:21px;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+
+.TB-formpopup .modulo-c-t {
+	width:400px;
+	height:15px;
+	float:left;
+	margin-bottom:3px;
+	margin-right:8px;
+	left:10px;
+	vertical-align:baseline;
+	display: block;
+	position:static;
+}
+
+
+.TB-formpopup .botao3 {
+	background:0;
+	border:1px solid #FFFFFF;
+	color:#FFFFFF;
+} 
+
+
+
+
+#desenv-cab-login {
+	margin-left: 330px;
+	margin-top: -25px;
+	width: 100px;
+	height: auto;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000066;
+	text-align: right;
+	line-height: 18px;
+}
+
+
+#formpopup .botao3 {
+	background:0;
+	border:1px solid #FFFFFF;
+	color:#FFFFFF;
+} 
+.paginacao {
+
+	margin-left:300px;
+}
+/*FIM DO POPUP*/
+
+/*TELA MENOR*/
+#formmenor {
+	margin-top:15%;
+	margin-left:auto;
+	margin-right:auto;
+	width:450px;
+	height:auto;
+	border:2px solid #000066;
+}
+
+#formmenor #conteudo-bloco .conteudo {
+	border:1px solid #F7AE4D;
+	background:#E1EDF7;
+	margin-bottom:18px;
+	padding:4px 0 4px 4px;
+	width:436px;
+	height:auto;
+	float: left;
+	
+}
+
+.moduloTextarea {
+	height:auto;
+	width:auto;
+	float:left;
+	margin-bottom:3px;
+	vertical-align:baseline;
+	border:0;
+	display:inline;
+	position:static;
+	margin-left:8px;
+	left:12px;	
+
+}
+
+#conteudo-bloco {
+	padding:4px;
+	width:auto;
+	height:auto;
+}
+#formmenor .modulo-c-t {
+	width:120px;
+	height:15px;
+	float:left;
+	margin-bottom:3px;
+	margin-right:8px;
+	left:10px;
+	vertical-align:baseline;
+	display: block;
+	position:static;
+}
+
+#desenv-cab-login {
+	margin-left: 330px;
+	margin-top: -25px;
+	width: 100px;
+	height: auto;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000066;
+	text-align: right;
+	line-height: 18px;
+}
+
+#formmenor .imagetopform{
+	font-family:Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#3A6FA2;
+	font-weight:bold;
+	/*border-bottom:2px solid #F7AE4D;*/
+	margin-top:15px;
+	margin-bottom:15px;
+	width:auto;
+	text-indent:10px;
+}
+
+/*FIM DO TELA MENOR*/
+
+/*POPUP LOV*/
+#formpopup-lov {
+	margin-left:0;
+	width:315px;
+	height:auto;
+	border:2px solid #000066;
+}
+#formpopup-lov .modulo-c-t {
+	width:150px;
+	height:15px;
+	float:left;
+	margin-bottom:3px;
+	margin-right:8px;
+	left:10px;
+	vertical-align:baseline;
+	display: block;
+	position:static;
+}
+
+#desenv-cab-login {
+	margin-left: 330px;
+	margin-top: -25px;
+	width: 100px;
+	height: auto;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000066;
+	text-align: right;
+	line-height: 18px;
+}
+
+#formpopup-lov .imagetopform{
+	font-family:Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	color:#3A6FA2;
+	font-weight:bold;
+	border-bottom:2px solid #F7AE4D;
+	margin-top:15px;
+	margin-bottom:15px;
+	width:auto;
+	text-indent:10px;
+}
+#formpopup-lov #layerbotao   {
+	background:#000066;
+	padding-top:3px;
+	height:21px;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+#formpopup-lov .botao3 {
+	background:0;
+	border:1px solid #FFFFFF;
+	color:#FFFFFF;
+} 
+.paginacao {
+
+	margin-left:180px;
+}
+
+.submiti {
+	height: 18px;/*20px;*/
+	cursor: pointer;
+	border:1px #000066 solid;
+	padding:1px;
+	margin:0;
+	font-size:10px;
+	font-weight:bold;
+	background-color:#E1EDF7;
+	text-align:center;
+	margin-left:10px;
+}
+.overflow {
+	SCROLLBAR-FACE-COLOR: #CCCCCC;
+	SCROLLBAR-TRACK-COLOR: #E7E7E7;
+	SCROLLBAR-BASE-COLOR: #FF6600;
+	SCROLLBAR-ARROW-COLOR: #666666;
+	SCROLLBAR-3DLIGHT-COLOR: #E7E7E7;
+	SCROLLBAR-HIGHLIGHT-COLOR: #666666;
+	SCROLLBAR-DARKSHADOW-COLOR: #E7E7E7;
+	SCROLLBAR-SHADOW-COLOR: #666666;
+	overflow-Y:scroll;  
+	overflow-X:hidden;
+}
+/*FIM DO POPUP LOV*/
+
+/*GRID*/
+
+
+#formPrincipal .navegador{
+	position:static;
+	background: #6a97c6;
+	float: left;
+	margin-top:-3px;
+	height:15px;
+	overflow:hidden;
+	margin-bottom:5px;
+	
+}
+#formPrincipal .navegador .dados a{
+	color:#FFFFFF;
+}
+#formPrincipal .navegador .dados a:hover{
+	color:#FF0000;
+}
+#formPrincipal .navegador .dados{
+	color:#ffffff;
+	font-weight:bold;
+	margin-left:20px;
+}
+#formPrincipal .dados input{
+	bottom:1px;
+	vertical-align:bottom;
+	background:#6a97c6;
+	color:#ffffff;
+	border:none;
+	margin-left:10px;
+	font-weight:bold;
+	font-size:7pt;
+	height:12px;
+}
+#formPrincipal .navegador .button {
+	position:static;
+	margin-top:-14px;
+	margin-left:50%;	
+}
+#formPrincipal .navegador .button .left_dupla {
+	background:url(../images/sulamerica/left_dupla.png) no-repeat;
+	height:13px;
+	width:18px;
+	margin:0px;
+	border:0px;
+	cursor:pointer;
+}
+#formPrincipal .navegador .button .right_dupla {
+	background:#6a97c6 url(../images/sulamerica/right_dupla.png) no-repeat;
+	height:13px;
+	width:18px;
+	margin:0px;
+	border:0px;
+	cursor:pointer;
+}
+#formPrincipal .navegador .button .right {
+	background:url(../images/sulamerica/right.png) no-repeat;
+	height:13px;
+	width:18px;
+	margin:0px;
+	border:0px;
+	cursor:pointer;
+}
+#formPrincipal .navegador .button .left {
+	background:url(../images/sulamerica/left.png) no-repeat;
+	height:13px;
+	width:18px;
+	margin:0px;
+	border:0px;
+	cursor:pointer;
+}
+
+
+/*Aqui - Alterado aqui - 12 de fevereiro*/
+
+.grid {
+	height:auto;
+	width:100%;
+	position:relative;
+	bottom:0px;
+	left:auto;
+	right:auto;
+	/*clear:left; inclusão nova 16 de abril*/
+}
+
+table.navegador {
+	background:#FFFFFF;
+	border-collapse:separate;
+	width:99%; /*Alterado aqui - 98%  - 12 de Fevereiro*/ 
+	margin-left:auto;
+	margin-right:auto;
+}
+table.navegador td {
+	padding-left:12px;
+}
+table.navegador th {
+	padding-left:10px;
+}
+
+
+
+
+#fixoBase {
+	position:fixed;
+	_position: absolute;
+	left: 0;
+	bottom: 20px;
+	width:100%;
+	height:25%;	
+	overflow-y:auto;
+	overflow-x:hidden;
+	z-index:988;
+	
+}
+
+div > div#fixoBase {
+position: fixed;
+}
+div#fixoBase {
+left: 0;
+bottom: 20px;
+_left: expression( ( 0 - fixoBase.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+_top: expression( ( 0 - fixoBase.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+
+
+
+
+#DivNavegacao {
+	position:fixed;
+	_position: absolute;
+	left: 0;
+	bottom: 0;
+	height:18px;
+	background:#000066;
+	width:100%;
+	margin-bottom:0;
+	vertical-align:middle;
+	padding-top:3px;
+}
+div > div#DivNavegacao {
+position: fixed;
+}
+div#DivNavegacao {
+left: 0;
+bottom: 0;
+_left: expression( ( 0 - DivNavegacao.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+_bottom: expression( ( 0 - DivNavegacao.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+#DivNavegacao #iframe {
+	z-index:-1000;
+	position:fixed;
+	bottom:0;
+	height:24px;
+	width:100%;
+}
+
+
+/*
+#DivNavegacao {
+	position:fixed;
+	_position: absolute;
+	left: 0;
+	bottom: 0;
+	height:18px;
+	background:#000066;
+	width:100%;
+	margin-bottom:0;
+	vertical-align:middle;
+	padding-top:3px;
+	z-index:1001;
+}
+div > div#DivNavegacao {
+position: fixed;
+}
+div#DivNavegacao {
+left: 0;
+bottom: 0;
+_left: expression( ( 0 - DivNavegacao.offsetWidth + ( document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body.clientWidth ) + ( ignoreMe = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+_top: expression( ( 0 - DivNavegacao.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+*/
+
+#DivNavegacao .dados{
+	color:#FFFFFF;
+	font-weight:bold;
+	margin-left:20px;
+}
+
+.dados input{
+	bottom:1px;
+	vertical-align:bottom;
+	background:#000066;
+	color:#FFFFFF;
+	border:none;
+	margin-left:10px;
+	font-weight:bold;
+	font-size:7pt;
+	height:12px;
+}
+#DivNavegacao .setas{
+	background:#00FF00;
+}
+#DivNavegacao .button {
+	
+	left:50%;
+	top:2px;
+	position:absolute;
+}
+
+.button .left_dupla {
+	background:url(../images/sulamerica/left_dupla.gif) no-repeat;
+	height:15px;
+	width:18px;
+	margin:0px;
+	border:0px;
+	cursor:pointer;
+}
+.button .right_dupla {
+	background:url(../images/sulamerica/right_dupla.gif) no-repeat;
+	height:15px;
+	width:18px;
+	margin:0px;
+	border:0px;
+	cursor:pointer;
+}
+.button .right {
+	background:url(../images/sulamerica/right.gif) no-repeat;
+	height:15px;
+	width:18px;
+	margin:0px;
+	border:0px;
+	cursor:pointer;
+}
+.button .left {
+	background:url(../images/sulamerica/left.gif) no-repeat;
+	height:15px;
+	width:18px;
+	margin:0px;
+	border:0px;
+	cursor:pointer;
+}
+
+/**/
+
+
+
+
+
+
+.navegador{ 
+		height:18px;
+		background:#000066;
+		width:100%;
+		margin-bottom:0;
+		position:relative;
+		vertical-align:middle;
+		padding-top:3px;
+		
+		
+	SCROLLBAR-FACE-COLOR: #CCCCCC; /*inclusão*/
+	SCROLLBAR-TRACK-COLOR: #E7E7E7;
+	SCROLLBAR-BASE-COLOR: #FF6600;
+	SCROLLBAR-ARROW-COLOR: #666666;
+	SCROLLBAR-3DLIGHT-COLOR: #E7E7E7;
+	SCROLLBAR-HIGHLIGHT-COLOR: #666666;
+	SCROLLBAR-DARKSHADOW-COLOR: #E7E7E7;
+	SCROLLBAR-SHADOW-COLOR: #666666;
+	overflow-Y:scroll;  
+	overflow-X:hidden;		
+}
+
+
+.navegador .dados{
+	color:#FFFFFF;
+	font-weight:bold;
+	margin-left:20px;
+
+}
+.dados input{
+	bottom:1px;
+	vertical-align:bottom;
+	background:#000066;
+	color:#FFFFFF;
+	border:none;
+	margin-left:10px;
+	font-weight:bold;
+	font-size:7pt;
+	height:12px;
+}
+
+.dados #total{
+	bottom:1px;
+	vertical-align:bottom;
+	background:#000066;
+	color:#FFFFFF;
+	border:none;
+	margin-left:10px;
+	font-weight:bold;
+	font-size:7pt;
+	width: 50px;
+	height:12px;
+}
+
+.navegador .setas{
+	background:#00FF00;
+}
+.navegador .button {
+	
+		left:50%;
+	top:2px;
+	position:absolute;
+}
+
+.button .left_dupla {
+	background:url(../images/sulamerica/left_dupla.gif) no-repeat;
+	height:15px;
+	width:18px;
+	margin:0px;
+	border:0px;
+	cursor:pointer;
+}
+.button .right_dupla {
+	background:url(../images/sulamerica/right_dupla.gif) no-repeat;
+	height:15px;
+	width:18px;
+	margin:0px;
+	border:0px;
+	cursor:pointer;
+}
+.button .right {
+	background:url(../images/sulamerica/right.gif) no-repeat;
+	height:15px;
+	width:18px;
+	margin:0px;
+	border:0px;
+	cursor:pointer;
+}
+.button .left {
+	background:url(../images/sulamerica/left.gif) no-repeat;
+	height:15px;
+	width:18px;
+	margin:0px;
+	border:0px;
+	cursor:pointer;
+}
+
+.botaoEdit {
+	background:url(../images/sulamerica/botao-edicao.gif) no-repeat;
+	width:16px;
+	height:14px;
+	border:0;
+	cursor:pointer;
+}
+
+.aviso {
+	background: url(../images/sulamerica/aviso.jpg) left top no-repeat;
+	height:14px;
+	color:#FF6600;
+	font-size:8pt;
+	text-indent:22px;
+	position:relative;
+	font-weight:normal;
+	padding-top:8px;
+	margin-bottom:-10px;
+}
+	#mostrar {
+		position: fixed !important; 
+		visibility: visible;
+		width:210px;
+		height:80px;
+		text-align:center;
+		margin:0;
+		margin-left:-105px;
+		left:50%;
+		top:35%;
+		position:absolute;
+		border:1px solid #6a97c6;
+		z-index:1500;
+	}
+/*FIM DO GRID*/
+
+/*focus*/
+
+	input:focus {
+		border:1px solid #666666;
+		background:#fee3ad;
+	}	
+	input.sffocus {
+		border:1px solid #666666;
+		background:#fee3ad;		
+	}
+	textarea:focus {
+		border:1px solid #666666;
+		background:#fee3ad;
+	}
+	textarea.sgfocus {
+		border:1px solid #666666;
+		background:#fee3ad;
+	}
+	select:focus {
+		border:1px solid #666666;
+		background:#fee3ad;
+	}
+	select.shfocus {
+		border:1px solid #666666;
+		background:#fee3ad;
+	}	
+
+/*fim focus*/
+/*
+iframe {
+	width:100%;
+	height:auto;
+}*/
+    	#Menu-Interno { position: absolute; left: 0px; top: 0px; z-index:900; }
+
+        div#Menu-Interno {
+		left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+		top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+		}

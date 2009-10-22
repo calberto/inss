@@ -1,0 +1,317 @@
+/*Bernardo Neto - bernarodo.neto@gmail.com
+USIX Technology - 01/2008*/
+
+@charset "UTF-8";
+
+/************Primeiro Menu-A*/
+#Menu-A {
+	position:fixed;
+	_position: absolute;
+	left: 16px; top: 1px;
+	z-index:5000;
+}
+div > div#Menu-A {
+	position: fixed;
+}
+div#Menu-A {
+	_left: expression( ( 16 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	_top: expression( ( 1 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+} 
+#Menu-A #iframeMenu {
+	z-index:-100px;
+	position:absolute;
+	top:1px;
+	height:159px;/*129px*/
+	width:201px;
+	display:inline;
+}  
+/******************************/
+/**************Segundo Menu-B*/
+#Menu-B {
+	position:fixed;
+	_position: absolute;
+	left: 144px; top: 1px;
+	z-index:5000;
+}
+div > div#Menu-B {
+	position: fixed;
+}
+div#Menu-B {
+	_left: expression( ( 144 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	_top: expression( ( 1 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+} 
+#Menu-B #iframeMenu {
+	z-index:-100px;
+	position:absolute;
+	top:1px;
+	height:171px;
+	width:201px;
+	display:inline;
+}
+/*****************************/
+/**************Terceiro Menu-C*/
+#Menu-C {
+	position:fixed;
+	_position: absolute;
+	left: 254px; top: 1px;
+	z-index:5000;	
+}
+div > div#Menu-C {
+	position: fixed;
+}
+div#Menu-C {
+	_left: expression( ( 254 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	_top: expression( ( 1 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+} 
+#Menu-C #iframeMenu {
+	z-index:-100px;
+	position:absolute;
+	top:1px;
+	height:108px;
+	width:201px;
+	display:inline;
+}
+
+/*********************************/
+/*********************Quarto Menu-D*/
+
+#Menu-D {
+	position:fixed;
+	_position: absolute;
+	right: 40px; top: 1px;
+	z-index:5000;	
+}
+div > div#Menu-D {
+	position: fixed;
+}
+div#Menu-D {
+	_right: expression( ( 40 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	_top: expression( ( 1 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+} 
+#Menu-D #iframeMenu {
+	z-index:-100px;
+	position:absolute;
+	top:1px;
+	height:159px;
+	width:201px;
+	display:inline;
+} 
+/**************************/
+/**************Final das regras do menu vertical*/
+
+
+
+/**************Menu interno com iframe*/
+
+	#Menu-Interno { 
+		position:  fixed;
+		left: 0px;
+		top: 0px;
+		width:100%;
+		z-index:900; }
+	#DivNavegacao { position: fixed; left: 0px; bottom: 0px; z-index:901; }
+	div > div#Menu-Interno { position: fixed; }
+	div > div#DivNavegacao { position: fixed; }
+	pre.fixit { overflow:auto;border-left:1px dashed #000;border-right:1px dashed #000;padding-left:2px; }
+
+
+/*#Menu-Interno {
+	width:100%;
+	position:fixed;
+	_position: absolute;
+	left: 0px; 
+	top: 0px;
+	z-index:1000;
+}*/
+div > div#Menu-Interno {
+	position: fixed;
+}
+div#Menu-Interno {
+	_left: expression( ( 0 + ( ignoreMe2 = document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft ) ) + 'px' );
+	_top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+} 
+
+#Menu-Interno #iframe {
+	z-index:-100;
+	position:fixed;
+	top:0;
+	height:24px;
+	width:100%;
+}
+#Menu-Interno #dados {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	display:inline;
+	background:#e1edf7;
+	border-top:#fff 1px solid;
+	border-bottom:#6a97c6 1px solid;
+	padding:1px 0;
+}
+
+
+#Menu-Interno #dados .modulo {
+	width:auto;
+	height:auto;
+	float:left;
+	margin-bottom:0;
+	vertical-align:baseline;
+	border:0;
+	display:inline;
+	position:static;
+	margin-left:0;
+	left:0;
+}
+
+
+
+/**************Demais*/
+
+
+ul.MenuBarVertical
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	cursor: default;
+	width: 18em;
+	font-size: 11px;
+	font-family: MS Sans Serif,arial;	
+	font-weight:bold;
+}
+
+ul.MenuBarActive
+{
+	z-index: 1000;
+}
+/* texto do menu */
+ul.MenuBarVertical li
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	position: relative;
+	text-align: left;
+	cursor: pointer;
+	width: 18em;
+
+}
+/* Submenus  */
+ul.MenuBarVertical ul
+{
+	margin: 2% 0 0 100%;
+	padding: 0;
+	list-style-type: none;
+	font-size: 100%;
+	position: absolute;
+	z-index: 1020;
+	cursor: default;
+	width: 12em;
+	left: -1000em;
+	top: 0;
+
+}
+
+ul.MenuBarVertical ul.MenuBarSubmenuVisible
+{
+	left: 0;
+
+}
+/* largura submenu*/
+ul.MenuBarVertical ul li
+{
+	width: 12em;
+
+}
+
+/*******************************************************************************
+
+ DESIGN INFORMAÇÃO
+
+ *******************************************************************************/
+
+
+ul.MenuBarVertical
+{
+	border: 1px solid #CCC;
+
+
+}
+
+ul.MenuBarVertical ul
+{
+	border: 1px solid #CCC;
+
+}
+/* Menu texto principal */
+ul.MenuBarVertical a
+{
+	display: block;
+	cursor: pointer;
+	background-color: #6a97c6;
+	padding: 0.4em 0.75em;
+	color: #fff;
+	text-decoration: none;
+	border-bottom:1px solid #FFFFFF;
+	z-index:1999;
+}
+
+ul.MenuBarVertical a:hover, ul.MenuBarVertical a:focus
+{
+	background-color: #ff6600;
+	color: #FFF;
+}
+
+ul.MenuBarVertical a.MenuBarItemHover, ul.MenuBarVertical a.MenuBarItemSubmenuHover, ul.MenuBarVertical a.MenuBarSubmenuVisible
+{
+	background-color: #ff6600;
+	color: #FFF;
+}
+
+/*******************************************************************************
+
+ SUBMENU 
+
+ *******************************************************************************/
+
+
+ul.MenuBarVertical a.MenuBarItemSubmenu
+{
+	background-image: url(../images/sulamerica/SpryMenuBarRight.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+
+
+ul.MenuBarVertical a.MenuBarItemSubmenuHover
+{
+	background-image: url(../images/sulamerica/SpryMenuBarRightHover.gif);
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+
+/*******************************************************************************
+
+ BROWSER 
+
+ *******************************************************************************/
+
+/* FOR IE:  */
+ul.MenuBarVertical iframe
+{
+	position: absolute;
+	z-index: 1010;
+}
+/* HACK IE:  */
+@media screen, projection
+{
+	ul.MenuBarVertical li.MenuBarItemIE
+	{
+		display: inline;
+		float: left;
+		background: #FFF;
+	}
+}
